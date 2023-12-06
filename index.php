@@ -49,11 +49,11 @@ foreach ($posts as $post => $value) { // chạy vòng lặp để lấy giá tr�
     <div class="card">
         <div class="card-header">
             <span><?php // display the value of username for this post
-             echo $value['name'] ?></span>
+             echo htmlspecialchars($value['name']) ?></span>
         </div>
         <div class="card-body">
             <p class="card-text"><?php // display the message for this post 
-             echo $value['message']?></p>
+             echo htmlspecialchars($value['message'])?></p>
         </div>
     </div>
     <hr>
